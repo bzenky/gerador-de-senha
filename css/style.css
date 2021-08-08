@@ -4,38 +4,75 @@
   box-sizing: border-box;
 }
 
-body {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: #321010;
+  background-color: #410c0c;
+  position: relative;
 }
-
-.card {
+.container .card {
   display: flex;
   flex-direction: column;
 }
-.card .senha {
+.container .card .senha {
   text-align: center;
   margin-bottom: 25px;
   font-size: 16px;
   color: #8aff9d;
   letter-spacing: 3px;
+  background: none;
+  border: none;
 }
-.card .gerar {
-  padding: 15px 20px;
-  background: rgba(0, 0, 0, 0.233);
+.container .card .senha:focus {
+  outline: none;
+}
+.container .card .gerar {
+  padding: 15px 0;
+  margin-bottom: 20px;
+  background: rgba(103, 4, 4, 0.753);
   border: 1px solid #877878;
+  border-radius: 7px;
   box-shadow: 0 0 4px white;
   color: #00ffbf;
   font-family: monospace;
   font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
   transition: 0.3s ease;
 }
-.card .gerar:hover {
+.container .card .gerar:hover {
   background-color: rgba(255, 255, 255, 0.705);
+  box-shadow: 0 0 4px white, 0 0 10px white;
   color: rgba(0, 0, 0, 0.74);
+}
+.container .card .copiar {
+  opacity: 0;
+  transition: 0.4s ease;
+}
+.container .card .copiar.visible {
+  opacity: 1;
+}
+.container .card .toasty {
+  position: absolute;
+  padding: 10px 15px;
+  background-color: gray;
+  color: black;
+  border-radius: 7px;
+  box-shadow: 0 0 4px white;
+  text-shadow: 0 0 1px rgba(245, 15, 15, 0.5);
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 16px;
+  top: -100%;
+  right: 0;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+.container .card .toasty.active {
+  opacity: 1;
+  top: 35px;
+  right: 25px;
 }/*# sourceMappingURL=style.css.map */
