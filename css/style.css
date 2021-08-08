@@ -1,0 +1,41 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #321010;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.card .senha {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 16px;
+  color: #8aff9d;
+  letter-spacing: 2px;
+}
+.card .gerar {
+  padding: 15px 20px;
+  background: rgba(0, 0, 0, 0.233);
+  border: 1px solid #877878;
+  box-shadow: 0 0 4px white;
+  color: #00ffbf;
+  font-family: monospace;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.card .gerar:hover {
+  background-color: rgba(255, 255, 255, 0.705);
+  color: rgba(0, 0, 0, 0.74);
+}/*# sourceMappingURL=style.css.map */
