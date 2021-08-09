@@ -10,7 +10,7 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: #410c0c;
+  background-color: #f2e9e4;
   position: relative;
 }
 .container .card {
@@ -21,7 +21,7 @@
   text-align: center;
   margin-bottom: 25px;
   font-size: 16px;
-  color: #8aff9d;
+  color: #22223a;
   letter-spacing: 3px;
   background: none;
   border: none;
@@ -32,21 +32,22 @@
 .container .card .gerar {
   padding: 15px 0;
   margin-bottom: 20px;
-  background: rgba(103, 4, 4, 0.753);
-  border: 1px solid #877878;
+  background: #22223a;
+  border: 2px solid #22223a;
   border-radius: 7px;
   box-shadow: 0 0 4px white;
-  color: #00ffbf;
+  color: #f2e8e3;
   font-family: monospace;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: 0.35s ease;
 }
 .container .card .gerar:hover {
-  background-color: rgba(255, 255, 255, 0.705);
+  background-color: #f2e8e3;
   box-shadow: 0 0 4px white, 0 0 10px white;
-  color: rgba(0, 0, 0, 0.74);
+  color: #22223a;
+  border: 2px solid #9a8d98;
 }
 .container .card .copiar {
   opacity: 0;
@@ -58,8 +59,8 @@
 .container .card .toasty {
   position: absolute;
   padding: 10px 15px;
-  background-color: gray;
-  color: black;
+  background-color: #22223a;
+  color: white;
   border-radius: 7px;
   box-shadow: 0 0 4px white;
   text-shadow: 0 0 1px rgba(245, 15, 15, 0.5);
